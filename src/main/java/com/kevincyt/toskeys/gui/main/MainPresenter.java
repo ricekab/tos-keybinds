@@ -1,13 +1,11 @@
 package com.kevincyt.toskeys.gui.main;
 
 import java.net.URL;
-import java.util.Collections;
 import java.util.Map;
 import java.util.ResourceBundle;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
 import com.airhacks.afterburner.views.FXMLView;
@@ -21,14 +19,15 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.control.MenuBar;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 
 public class MainPresenter implements Initializable {
 	
 	@FXML private Pane main;
+	
+	@FXML private MenuBar menubar;
+	@FXML public MenubarPresenter menubarController;
 	
 	@Inject private KeyService keyService;
 	

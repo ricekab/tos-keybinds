@@ -10,6 +10,7 @@
 	prefWidth="1000">
 	<fx:include fx:id="menubar" source="../menubar/menubar.fxml" />
 	<ScrollPane>
-		<FlowPane fx:id="main" vgap="5" hgap="10" orientation="VERTICAL" />
+		<FlowPane fx:id="main" vgap="5" hgap="10" orientation="VERTICAL"
+			prefHeight="650" />
 	</ScrollPane>
 </VBox>

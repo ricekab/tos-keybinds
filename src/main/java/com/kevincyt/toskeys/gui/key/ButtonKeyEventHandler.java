@@ -21,7 +21,6 @@ public class ButtonKeyEventHandler implements EventHandler<KeyEvent> {
 		} else {
 			src.setText(event.getCode().toString());
 		}
-		System.out.println("Handler removed");
 		src.removeEventFilter(KeyEvent.KEY_PRESSED, this);
 	}
 
