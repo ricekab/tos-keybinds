@@ -15,23 +15,23 @@ import javafx.scene.control.Label;
 import javafx.scene.input.KeyEvent;
 
 public class KeyPresenter implements Initializable {
-	
+
 	@Inject private KeyService keyService;
-	
-	@FXML private Label id;
-	@FXML private Button key;
-	@FXML private CheckBox shift, ctrl, alt;
-	
+
+	@FXML public Label id;
+	@FXML public Button key;
+	@FXML public CheckBox shift, ctrl, alt;
+
 	private ButtonKeyEventHandler keyEventHandler;
 
 	@Override
-	public void initialize(URL arg0, ResourceBundle arg1) {
+	public void initialize(URL location, ResourceBundle resources) {
 		keyEventHandler = new ButtonKeyEventHandler(key);
 		key.setOnAction(event -> {
 			keyEventHandler.prepare();
 			System.out.println("Add Handler");
 			key.addEventFilter(KeyEvent.KEY_PRESSED, keyEventHandler);
-		}); 
+		});
 
 	}
 

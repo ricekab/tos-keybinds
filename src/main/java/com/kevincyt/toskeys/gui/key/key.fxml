@@ -6,8 +6,8 @@
 <?import javafx.scene.control.Button?>
 
 <HBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER_LEFT"
-	prefHeight="26.0" prefWidth="600.0" fx:controller="com.kevincyt.toskeys.gui.key.KeyPresenter">
-	<Label fx:id="id" prefWidth="120"/>
+	fx:controller="com.kevincyt.toskeys.gui.key.KeyPresenter">
+	<Label fx:id="id" prefWidth="120" />
 	<Button fx:id="key" prefWidth="80" />
 	<CheckBox fx:id="shift" text="Shift" prefWidth="50" />
 	<CheckBox fx:id="alt" text="Alt" prefWidth="50" />
