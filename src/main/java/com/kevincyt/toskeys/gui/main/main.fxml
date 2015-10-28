@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0"
+	prefWidth="800.0" fx:controller="com.kevincyt.toskeys.gui.main.MainPresenter">
+	<fx:include fx:id="menubar" source="../menubar/menubar.fxml" />
+	<fx:include fx:id="keyBox" source="../key/key.fxml" />
+</VBox>
