@@ -14,8 +14,6 @@
 				<SeparatorMenuItem mnemonicParsing="false" />
 				<MenuItem mnemonicParsing="false" text="Save hotkeys" onAction="#saveHotkeys"/>
 				<SeparatorMenuItem mnemonicParsing="false" />
-				<MenuItem mnemonicParsing="false" text="Save hotkeys As..." onAction="#saveHotkeysAs"/>
-				<SeparatorMenuItem mnemonicParsing="false" />
 				<MenuItem mnemonicParsing="false" text="Quit" onAction="#quitApplication"/>
 			</items>
 		</Menu>
