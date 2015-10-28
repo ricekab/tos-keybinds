@@ -5,7 +5,7 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 
-<MenuBar xmlns:fx="http://javafx.com/fxml/1"
+<MenuBar xmlns:fx="http://javafx.com/fxml/1" fx:id="mbar"
 	fx:controller="com.kevincyt.toskeys.gui.menubar.MenubarPresenter">
 	<menus>
 		<Menu mnemonicParsing="false" text="File">
@@ -13,6 +13,8 @@
 				<MenuItem mnemonicParsing="false" text="Open hotkeys..." onAction="#openHotkeyFile"/>
 				<SeparatorMenuItem mnemonicParsing="false" />
 				<MenuItem mnemonicParsing="false" text="Save hotkeys" onAction="#saveHotkeys"/>
+				<SeparatorMenuItem mnemonicParsing="false" />
+				<MenuItem mnemonicParsing="false" text="Save hotkeys as..." onAction="#saveHotkeysAs"/>
 				<SeparatorMenuItem mnemonicParsing="false" />
 				<MenuItem mnemonicParsing="false" text="Quit" onAction="#quitApplication"/>
 			</items>

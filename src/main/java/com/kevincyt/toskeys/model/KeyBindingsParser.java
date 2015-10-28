@@ -58,13 +58,12 @@ public class KeyBindingsParser {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 		return keyMap;
 	}
 
 	/**
-	 * Writes the modified keybindings to the destination file, using the xmlReference file to recreate the
-	 * entire file.
+	 * Writes the modified key mapping to the destination file, using the xmlReference file to recreate the
+	 * full hotkey file.
 	 */
 	public static void writeToXml(File destination, File xmlReference, Map<String, Hotkey> keyMap) {
 		try {
@@ -117,8 +116,8 @@ public class KeyBindingsParser {
 	/**
 	 * Overwrite the key bindings in the given file, using it as reference first.
 	 */
-	public static void writeToXML(File file, Map<String, Hotkey> keyMap) {
-		KeyBindingsParser.writeToXml(file, file, keyMap);
+	public static void writeToXML(File xmlFile, Map<String, Hotkey> keyMap) {
+		KeyBindingsParser.writeToXml(xmlFile, xmlFile, keyMap);
 	}
 
 }

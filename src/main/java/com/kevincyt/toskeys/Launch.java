@@ -1,5 +1,6 @@
 package com.kevincyt.toskeys;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,6 +18,7 @@ public class Launch extends Application{
 	@Override
 	public void start(Stage stage) throws Exception {
 		KeyService service = new KeyService();
+		service.readKeybindings(new File(System.getProperty("user.dir") + "\\hotkey_default.xml"));
 		Map<Object, Object> injectorSource = new HashMap<Object, Object>();
 		injectorSource.put("keyService", service);
 		
