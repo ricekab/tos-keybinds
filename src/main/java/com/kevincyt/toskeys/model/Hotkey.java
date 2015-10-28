@@ -25,16 +25,31 @@ public class Hotkey {
 		return key;
 	}
 
+	public String getKey() {
+		return key.get();
+	}
+
 	public BooleanProperty getUseShiftProperty() {
 		return useShift;
+	}
+
+	public boolean useShift() {
+		return useShift.get();
 	}
 
 	public BooleanProperty getUseAltProperty() {
 		return useAlt;
 	}
 
+	public boolean useAlt() {
+		return useAlt.get();
+	}
+
 	public BooleanProperty getUseCtrlProperty() {
 		return useCtrl;
 	}
 
+	public boolean useCtrl() {
+		return useCtrl.get();
+	}
 }
