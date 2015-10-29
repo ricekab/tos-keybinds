@@ -1,0 +1,8 @@
+.check-box{
+	-fx-padding: 5.0;
+}
+
+.keybox{
+	-fx-background-color: #dcdcdc;
+	-fx-padding: 2.5 5;
+}

@@ -5,11 +5,11 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Button?>
 
-<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER_LEFT"
+<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER_LEFT" styleClass="keybox"
 	fx:controller="com.kevincyt.toskeys.gui.key.KeyPresenter">
 	<Label fx:id="id" prefWidth="120" />
 	<Button fx:id="key" prefWidth="80" />
-	<CheckBox fx:id="shift" text="Shift" prefWidth="50" />
+	<CheckBox fx:id="shift" text="Shift" prefWidth="60" />
 	<CheckBox fx:id="alt" text="Alt" prefWidth="50" />
 	<CheckBox fx:id="ctrl" text="Ctrl" prefWidth="50" />
 </HBox>
