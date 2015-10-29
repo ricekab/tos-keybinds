@@ -7,9 +7,9 @@
 <?import javafx.scene.control.ScrollPane?>
 
 <VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kevincyt.toskeys.gui.main.MainPresenter"
-	prefWidth="1000">
+	prefWidth="1000" >
 	<fx:include fx:id="menubar" source="../menubar/menubar.fxml" />
-	<ScrollPane>
+	<ScrollPane maxHeight="10000" maxWidth="10000" fitToHeight="true">
 		<FlowPane fx:id="main" vgap="5" hgap="10" orientation="VERTICAL"
 			prefHeight="650" />
 	</ScrollPane>
